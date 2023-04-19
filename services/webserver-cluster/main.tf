@@ -70,6 +70,7 @@ resource "aws_security_group_rule" "allow_traffic_inbound" {
 
 }
 
+
 resource "aws_security_group_rule" "allow_all_outbound" {
   for_each          = aws_security_group.example-sg
   type              = "egress"
