@@ -138,7 +138,7 @@ resource "aws_lb_listener_rule" "example-elb-rule" {
   }
   action {
     type             = "forward"
-    target_group_arn = aws_lb_target_group.websever-tg.arn
+    target_group_arn = aws_lb_target_group.webserver-tg.arn
   }
 
 }
