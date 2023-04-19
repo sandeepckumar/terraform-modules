@@ -83,7 +83,7 @@ resource "aws_security_group_rule" "allow_all_outbound" {
 
 # ELB Resources
 
-resource "aws_lb_target_group" "websever-tg" {
+resource "aws_lb_target_group" "webserver-tg" {
   name     = "${var.env}-webserver-tg"
   port     = var.webserver-port
   protocol = var.http_protocol
