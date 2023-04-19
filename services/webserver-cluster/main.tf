@@ -40,7 +40,7 @@ resource "aws_autoscaling_group" "webserver-asg" {
   name                 = "${var.env}-webserver-asg"
   health_check_type    = "ELB"
   target_group_arns    = [aws_lb_target_group.webserver-tg.arn]
-  launch_configuration = aws_launch_configuration.example-launch-config
+  launch_configuration = aws_launch_configuration.example-launch-config.name
   vpc_zone_identifier  = data.aws_subnets.default.ids
   max_size             = var.asg-max
   min_size             = var.asg-min
