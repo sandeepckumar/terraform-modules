@@ -43,9 +43,6 @@ variable "lb-port" {
   default = 80
 }
 
-variable "webserver-asg-name" {
-  type = string
-}
 
 variable "http_protocol" {
   type    = string
